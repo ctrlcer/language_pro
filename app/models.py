@@ -23,6 +23,7 @@ class Class(db.Model):
     students_num = db.Column(db.Integer, default=0)
     description = db.Column(db.Text)
     chapters = db.relationship('Chapter')
+    progress = db.Column(db.Float)
 
     def __init__(self, class_name, teacher_name, rating, classes_num, students_num, description):
         self.class_name = class_name
