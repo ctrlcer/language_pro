@@ -17,5 +17,6 @@ def classes_api():
             temp['classes_num'] = cls.classes_num
             temp['students_num'] = cls.students_num
             temp['description'] = cls.description
+            temp['progress'] = cls.progress
             s.append(temp)
         return jsonify(s)
